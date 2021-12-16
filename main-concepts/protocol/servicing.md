@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Pocket Network’s Servicing layer is comprised of 2 main actors: Applications and Validators. An Application submits a Relay Request, or an API requests to be routed to any Relay Chain. A Validator ‘services’ the Application, by routing the Relay Request to the Relay Chain and forwarding the response to the Application. This interaction between an Application and a Validator is the fundamental utility of Pocket Network.
+The Pocket Network’s Servicing layer is composed of two main actors: Applications and Validators. An Application submits a Relay Request, or an API requests to be routed to any Relay Chain. A Validator "services" the Application by routing the Relay Request to the Relay Chain and forwarding the response to the Application. This interaction between an Application and a Validator is the fundamental utility of Pocket Network.
 
 ### Basic Lifecycle
 
@@ -10,7 +10,7 @@ The Pocket Network’s Servicing layer is comprised of 2 main actors: Applicatio
 2. The amount of the sanctioned throughput \(per request\) is determined by the amount the Application stakes in the network.
 3. To _register_ to provide decentralized infrastructure, a Validator must stake the native cryptocurrency POKT in the network.
 4. After the subsequent staking, an Application is paired with Validator\(s\), during which time the servicing interaction takes place.
-5. For providing the decentralized infrastructure, Validator receive an amount of the native cryptocurrency POKT proportional to the amount of throughput \(in requests\) served.
+5. For providing the decentralized infrastructure, Validators receive an amount of the native cryptocurrency POKT proportional to the amount of throughput \(in requests\) served.
 6. Once an Application or Validator unstakes, they are _unregistered_ from Pocket Network and the stake is returned to their account.
 
 ## Sessions
@@ -19,11 +19,11 @@ The Pocket Network’s Servicing layer is comprised of 2 main actors: Applicatio
 
 The Validator\(s\) that are paired to service an Application in a Session are _equally_ distributed among all of the Validators in the network.
 
-Meaning that every Validator theoretically serves the same amount as their peers and every Application theoretically will be evenly serviced by each Validators over time.
+Meaning that every Validator theoretically serves the same amount as their peers and every Application theoretically will be evenly serviced by each Validator over time.
 
 ### Generation
 
-The generation of a Session is key to the equal distribution property.
+The generation of a Session is key to the equal distribution of property.
 
 Equally distributed sessions are generated with _pseudorandom_ seed data:
 
